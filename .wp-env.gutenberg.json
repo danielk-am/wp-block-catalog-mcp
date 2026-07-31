@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/wp-env.json",
+  "core": "WordPress/WordPress#7.0.2",
+  "port": 8897,
+  "phpVersion": "8.3",
+  "testsEnvironment": false,
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/gutenberg.23.6.2.zip"
+  ],
+  "mappings": {
+    "wp-content/mu-plugins/wp-block-catalog-probe.php": "./probes/php/wp-block-catalog-probe.php"
+  }
+}

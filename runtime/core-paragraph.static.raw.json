@@ -1,0 +1,12 @@
+{
+  "attributes": {
+    "content": "Hello catalogue"
+  },
+  "issues": [],
+  "kind": "static-save",
+  "markup": "<!-- wp:paragraph -->\n<p>Hello catalogue</p>\n<!-- /wp:paragraph -->",
+  "markupHash": "fc52c2f7bc6b8fc73c9497f22fdbb09cf185ded7ee2b502e7a79bccead672eb0",
+  "name": "core/paragraph",
+  "parsedBlockCount": 1,
+  "valid": true
+}

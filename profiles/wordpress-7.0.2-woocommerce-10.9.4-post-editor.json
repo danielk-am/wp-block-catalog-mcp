@@ -1,0 +1,15 @@
+{
+  "productVersions": {
+    "wordpress": "7.0.2",
+    "woocommerce": "10.9.4"
+  },
+  "locale": "en_US",
+  "theme": {
+    "kind": "block",
+    "slug": "twentytwentyfive"
+  },
+  "featureFlags": {
+    "cart_save_for_later": false,
+    "product_wishlist": false
+  }
+}

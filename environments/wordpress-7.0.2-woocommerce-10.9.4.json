@@ -1,0 +1,26 @@
+{
+  "id": "wordpress@7.0.2+woocommerce@10.9.4",
+  "title": "WordPress 7.0.2 with WooCommerce 10.9.4",
+  "visibility": "public",
+  "layers": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "priority": 100
+    },
+    {
+      "sourceId": "woocommerce@10.9.4",
+      "priority": 200
+    }
+  ],
+  "metadata": {
+    "wordpressVersion": "7.0.2",
+    "woocommerceVersion": "10.9.4",
+    "editorSurface": "post-editor",
+    "themeType": "block",
+    "featureFlags": {
+      "cart_save_for_later": false,
+      "product_wishlist": false
+    },
+    "locale": "en_US"
+  }
+}

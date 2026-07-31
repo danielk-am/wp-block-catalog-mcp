@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/wp-env.json",
+  "core": "WordPress/WordPress#7.0.2",
+  "port": 8895,
+  "phpVersion": "8.3",
+  "testsEnvironment": false,
+  "mappings": {
+    "wp-content/mu-plugins/wp-block-catalog-probe.php": "./probes/php/wp-block-catalog-probe.php"
+  }
+}

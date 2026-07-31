@@ -1,0 +1,51 @@
+{
+  "id": "woocommerce@10.9.4",
+  "adapter": "woocommerce-plugin",
+  "product": "woocommerce",
+  "productVersion": "10.9.4",
+  "channel": "stable",
+  "visibility": "public",
+  "repository": "https://github.com/woocommerce/woocommerce",
+  "ref": "10.9.4",
+  "commit": "884d89cbccaccc8e0b9c2c26f91c51df67e66cab",
+  "include": [
+    "plugins/woocommerce/client/blocks/assets/js/**/block.json"
+  ],
+  "exclude": [
+    "plugins/woocommerce/assets/client/blocks/**",
+    "plugins/woocommerce/client/blocks/build/**",
+    "plugins/woocommerce/client/blocks/storybook/**",
+    "plugins/woocommerce/**/test*/**/block.json",
+    "**/node_modules/**",
+    "**/vendor/**"
+  ],
+  "metadata": {
+    "versionSource": "plugins/woocommerce/woocommerce.php",
+    "minimumWordPressVersion": "6.9",
+    "minimumPhpVersion": "7.4",
+    "canonicalBlockCount": 174,
+    "generatedMetadataCollection": "plugins/woocommerce/assets/client/blocks/blocks-json.php",
+    "registration": [
+      "plugins/woocommerce/src/Blocks/BlockTypesController.php",
+      "plugins/woocommerce/src/Blocks/BlockTypes/**/*.php",
+      "plugins/woocommerce/src/Internal/ShopperLists/ShopperListsController.php",
+      "plugins/woocommerce/client/blocks/bin/webpack-configs.js"
+    ],
+    "runtimeProfiles": [
+      "block-theme",
+      "classic-theme",
+      "post-editor",
+      "widgets-editor",
+      "storefront",
+      "order-confirmation"
+    ],
+    "knownGates": [
+      "cart_save_for_later",
+      "product_wishlist",
+      "block-theme",
+      "editor-context",
+      "woocommerce_get_block_types"
+    ],
+    "dynamicClassification": "runtime-only"
+  }
+}

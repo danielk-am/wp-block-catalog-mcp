@@ -1,0 +1,24 @@
+{
+  "id": "wordpress@7.0.2+gutenberg@23.6.2",
+  "title": "WordPress 7.0.2 with Gutenberg 23.6.2",
+  "visibility": "public",
+  "layers": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "priority": 100
+    },
+    {
+      "sourceId": "gutenberg@23.6.2",
+      "priority": 200
+    }
+  ],
+  "metadata": {
+    "wordpressVersion": "7.0.2",
+    "gutenbergVersion": "23.6.2",
+    "editorSurface": "post-editor",
+    "themeType": "block",
+    "featureFlags": {},
+    "locale": "en_US",
+    "resolutionRule": "The Gutenberg layer shadows matching core block names."
+  }
+}

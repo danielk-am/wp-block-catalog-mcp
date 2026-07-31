@@ -1,0 +1,15 @@
+{
+    "attributes": {
+        "postsToShow": 2
+    },
+    "callbacks": {
+        "render": true
+    },
+    "isDynamic": true,
+    "kind": "server-render",
+    "markup": "<ul class=\"wp-block-latest-posts__list wp-block-latest-posts is-layout-flow wp-block-latest-posts-is-layout-flow\"><li><a class=\"wp-block-latest-posts__post-title\" href=\"http://localhost:8897/2026/07/30/hello-world/\">Hello world!</a></li>\n</ul>",
+    "markupHash": "3ad5f66673e8127ec7ba4b41aadb140f1ef4d7aa10f86c6b01e20adcd9989ace",
+    "name": "core/latest-posts",
+    "postId": null,
+    "schemaVersion": 1
+}

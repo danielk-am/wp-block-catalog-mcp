@@ -1,0 +1,19 @@
+{
+  "visibility": "public",
+  "freshness": {
+    "maxAgeSeconds": 604800,
+    "maxFutureSkewSeconds": 300
+  },
+  "removalExplanations": [
+    {
+      "kind": "source",
+      "key": "jetpack@15.9.1",
+      "reason": "Superseded by the supported Jetpack 16.0.1 stable release."
+    },
+    {
+      "kind": "environment",
+      "key": "wordpress@7.0.2+jetpack@15.9.1",
+      "reason": "Superseded by the exact Jetpack 16.0.1 disconnected profile."
+    }
+  ]
+}

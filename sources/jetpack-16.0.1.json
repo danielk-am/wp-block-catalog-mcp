@@ -1,0 +1,63 @@
+{
+  "id": "jetpack@16.0.1",
+  "adapter": "jetpack-plugin",
+  "product": "jetpack",
+  "productVersion": "16.0.1",
+  "channel": "stable",
+  "visibility": "public",
+  "repository": "https://github.com/Automattic/jetpack",
+  "ref": "plugins/jetpack@16.0.1",
+  "commit": "4c79b22036b83e8c03a4354ad67f54a5241319b0",
+  "include": [
+    "projects/plugins/jetpack/extensions/blocks/**/block.json"
+  ],
+  "exclude": [
+    "projects/plugins/jetpack/_inc/blocks/**",
+    "projects/plugins/jetpack/jetpack_vendor/**",
+    "projects/plugins/jetpack/extensions/**/test/**",
+    "projects/plugins/jetpack/tests/**",
+    "**/node_modules/**"
+  ],
+  "metadata": {
+    "versionSource": "projects/plugins/jetpack/jetpack.php",
+    "minimumWordPressVersion": "6.9",
+    "minimumPhpVersion": "7.2",
+    "canonicalMetadataCount": 46,
+    "availabilityManifest": "projects/plugins/jetpack/extensions/index.json",
+    "generatedMetadataCollection": "projects/plugins/jetpack/_inc/blocks/blocks-manifest.php",
+    "registration": [
+      "projects/plugins/jetpack/class.jetpack-gutenberg.php",
+      "projects/packages/blocks/src/class-blocks.php",
+      "projects/plugins/jetpack/extensions/blocks/**/*.php",
+      "projects/plugins/jetpack/extensions/extended-blocks/**/*.php",
+      "projects/plugins/jetpack/extensions/plugins/**/*.php",
+      "projects/packages/forms/src/blocks/**",
+      "projects/packages/podcast/src/blocks/**",
+      "projects/plugins/jetpack/composer.lock"
+    ],
+    "runtimeProfiles": [
+      "production-connected",
+      "production-offline",
+      "disconnected",
+      "experimental-connected",
+      "beta-connected",
+      "wordpress-com-atomic"
+    ],
+    "knownGates": [
+      "connection",
+      "offline-mode",
+      "blocks-module",
+      "variation",
+      "plan",
+      "capability",
+      "version-requirements"
+    ],
+    "knownPhpOnlyBlocks": [
+      "jetpack/blogroll-item",
+      "jetpack/whatsapp-button",
+      "jetpack/videopress-block",
+      "premium-content/*"
+    ],
+    "dynamicClassification": "runtime-only"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "align": "left",
+    "alt": "",
+    "caption": [],
+    "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+  },
+  "currentMarkup": "<!-- wp:image {\"align\":\"left\"} -->\n<figure class=\"wp-block-image alignleft\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==\" alt=\"\"/></figure>\n<!-- /wp:image -->",
+  "currentMarkupHash": "6fa4e8e7d89ac7bed5aac02cf4d1ea8402eb1fdf724d82363ac29e0158b71de9",
+  "fixtureMarkup": "<!-- wp:core/image {\"align\":\"left\"} -->\n<figure class=\"wp-block-image alignleft\" style=\"max-width:50%\">\n\t<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==\" alt=\"\" />\n</figure>\n<!-- /wp:core/image -->",
+  "innerBlocks": [],
+  "inputMarkupHash": "6c3b23e3dabc244a5fe7ea4314a6e2e4bdf5c5ef528af24d44f09ddea8d77935",
+  "issues": [],
+  "kind": "deprecated-fixture",
+  "migrated": true,
+  "name": "core/image",
+  "valid": true
+}

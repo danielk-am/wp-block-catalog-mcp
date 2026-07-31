@@ -1,0 +1,8 @@
+dist/
+node_modules/
+*.log
+.DS_Store
+catalog/*.generated.json
+!catalog/public.release.generated.json
+.checkouts/
+.wp-env-home*/

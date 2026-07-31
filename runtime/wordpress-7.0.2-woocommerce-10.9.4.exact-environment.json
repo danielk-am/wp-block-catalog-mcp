@@ -1,0 +1,31 @@
+{
+  "id": "wordpress@7.0.2+woocommerce@10.9.4",
+  "wordpressVersion": "7.0.2",
+  "phpVersion": "8.3.32",
+  "locale": "en_US",
+  "timezone": "+00:00",
+  "sources": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "productVersion": "7.0.2",
+      "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+    },
+    {
+      "sourceId": "woocommerce@10.9.4",
+      "productVersion": "10.9.4",
+      "commit": "884d89cbccaccc8e0b9c2c26f91c51df67e66cab"
+    }
+  ],
+  "runtimeComponents": [
+    {
+      "name": "server-registry",
+      "version": "wordpress-7.0.2-woocommerce-10.9.4-php-8.3.32",
+      "artifactHash": "b898b847dc968dba51c6ae3fa3be9af5979b6ea48e4933529095d45d08f9d179"
+    },
+    {
+      "name": "client-registry",
+      "version": "wordpress-7.0.2-woocommerce-10.9.4-post-editor",
+      "artifactHash": "559f5920b75dc27b754f5c1d582001d84b484de7f510c72a9563b63dbf4597e0"
+    }
+  ]
+}

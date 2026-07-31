@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "buildConfig": "../build/public.json",
+  "sources": [
+    {
+      "product": "wordpress",
+      "repository": "https://github.com/WordPress/wordpress-develop",
+      "channel": "stable",
+      "discovery": {
+        "kind": "git-tags",
+        "branchFallback": false
+      },
+      "tagPattern": "^(?<version>[0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:-[0-9A-Za-z][0-9A-Za-z.-]*)?)$"
+    },
+    {
+      "product": "gutenberg",
+      "repository": "https://github.com/WordPress/gutenberg",
+      "channel": "stable",
+      "discovery": {
+        "kind": "git-tags",
+        "branchFallback": false
+      },
+      "tagPattern": "^v(?<version>[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z][0-9A-Za-z.-]*)?)$"
+    },
+    {
+      "product": "woocommerce",
+      "repository": "https://github.com/woocommerce/woocommerce",
+      "channel": "stable",
+      "discovery": {
+        "kind": "git-tags",
+        "branchFallback": false
+      },
+      "tagPattern": "^(?<version>[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z][0-9A-Za-z.-]*)?)$"
+    },
+    {
+      "product": "jetpack",
+      "repository": "https://github.com/Automattic/jetpack",
+      "channel": "stable",
+      "discovery": {
+        "kind": "git-tags",
+        "branchFallback": false
+      },
+      "tagPattern": "^plugins/jetpack@(?<version>[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z][0-9A-Za-z.-]*)?)$"
+    }
+  ]
+}

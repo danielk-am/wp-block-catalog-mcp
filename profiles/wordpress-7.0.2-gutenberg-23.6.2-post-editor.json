@@ -1,0 +1,12 @@
+{
+  "productVersions": {
+    "wordpress": "7.0.2",
+    "gutenberg": "23.6.2"
+  },
+  "locale": "en_US",
+  "theme": {
+    "kind": "block",
+    "slug": "twentytwentyfive"
+  },
+  "featureFlags": {}
+}

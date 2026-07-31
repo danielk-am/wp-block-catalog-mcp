@@ -1,0 +1,26 @@
+{
+  "id": "wordpress@7.0.2",
+  "wordpressVersion": "7.0.2",
+  "phpVersion": "8.3.32",
+  "locale": "en_US",
+  "timezone": "+00:00",
+  "sources": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "productVersion": "7.0.2",
+      "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+    }
+  ],
+  "runtimeComponents": [
+    {
+      "name": "server-registry",
+      "version": "wordpress-7.0.2-php-8.3.32",
+      "artifactHash": "edb36d9b28a6b30024fef71e9c715f25753e45806120f4c3bd382d7c32ea9738"
+    },
+    {
+      "name": "client-registry",
+      "version": "wordpress-7.0.2-post-editor",
+      "artifactHash": "71c22ba9c0d36700a430adda7f6cb623c5a7729f7ea12bb9613389be8d36ced3"
+    }
+  ]
+}

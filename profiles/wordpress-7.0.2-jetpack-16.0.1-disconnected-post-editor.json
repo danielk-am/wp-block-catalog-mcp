@@ -1,0 +1,17 @@
+{
+  "productVersions": {
+    "wordpress": "7.0.2",
+    "jetpack": "16.0.1"
+  },
+  "locale": "en_US",
+  "theme": {
+    "kind": "block",
+    "slug": "twentytwentyfive"
+  },
+  "featureFlags": {
+    "connection": "disconnected",
+    "offlineMode": true,
+    "blocksModule": true,
+    "variation": "production"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "productVersions": {
+    "wordpress": "7.0.2"
+  },
+  "locale": "en_US",
+  "theme": {
+    "kind": "block",
+    "slug": "twentytwentyfive"
+  },
+  "featureFlags": {}
+}

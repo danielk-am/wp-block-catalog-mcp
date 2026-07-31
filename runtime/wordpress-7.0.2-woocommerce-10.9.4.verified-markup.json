@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "dynamic:woocommerce/store-notices:0",
+      "environmentId": "wordpress@7.0.2+woocommerce@10.9.4",
+      "block": {
+        "name": "woocommerce/store-notices",
+        "attributes": {
+          "align": "wide"
+        },
+        "innerBlocks": []
+      },
+      "context": {},
+      "fixtureMarkup": null,
+      "markup": "<div data-block-name=\"woocommerce/store-notices\" class=\"wc-block-store-notices woocommerce alignwide wp-block-woocommerce-store-notices\"><div class=\"woocommerce-notices-wrapper\"></div></div>",
+      "evidence": {
+        "schemaVersion": 1,
+        "kind": "dynamic-server-render",
+        "blockName": "woocommerce/store-notices",
+        "status": "passed",
+        "labelsGranted": [
+          "server-render-valid"
+        ],
+        "expectedEnvironment": {
+          "id": "wordpress@7.0.2+woocommerce@10.9.4",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "woocommerce@10.9.4",
+              "productVersion": "10.9.4",
+              "commit": "884d89cbccaccc8e0b9c2c26f91c51df67e66cab"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-woocommerce-10.9.4-php-8.3.32",
+              "artifactHash": "b898b847dc968dba51c6ae3fa3be9af5979b6ea48e4933529095d45d08f9d179"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-woocommerce-10.9.4-post-editor",
+              "artifactHash": "559f5920b75dc27b754f5c1d582001d84b484de7f510c72a9563b63dbf4597e0"
+            }
+          ]
+        },
+        "expectedEnvironmentHash": "51677c6e292f02983c6ad09ebc386a547845be1b42d90731c5ae637ac2f3c0ff",
+        "observedEnvironmentBefore": {
+          "id": "wordpress@7.0.2+woocommerce@10.9.4",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "woocommerce@10.9.4",
+              "productVersion": "10.9.4",
+              "commit": "884d89cbccaccc8e0b9c2c26f91c51df67e66cab"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-woocommerce-10.9.4-php-8.3.32",
+              "artifactHash": "b898b847dc968dba51c6ae3fa3be9af5979b6ea48e4933529095d45d08f9d179"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-woocommerce-10.9.4-post-editor",
+              "artifactHash": "559f5920b75dc27b754f5c1d582001d84b484de7f510c72a9563b63dbf4597e0"
+            }
+          ]
+        },
+        "observedEnvironmentAfter": {
+          "id": "wordpress@7.0.2+woocommerce@10.9.4",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "woocommerce@10.9.4",
+              "productVersion": "10.9.4",
+              "commit": "884d89cbccaccc8e0b9c2c26f91c51df67e66cab"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-woocommerce-10.9.4-php-8.3.32",
+              "artifactHash": "b898b847dc968dba51c6ae3fa3be9af5979b6ea48e4933529095d45d08f9d179"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-woocommerce-10.9.4-post-editor",
+              "artifactHash": "559f5920b75dc27b754f5c1d582001d84b484de7f510c72a9563b63dbf4597e0"
+            }
+          ]
+        },
+        "inputHash": "6fe329b4bb0878801fed53f2b8eb3f522f1e6aa7a24ccb6b556939904b4b6674",
+        "outputHash": "bdc2cc2c09068922eb375bf8f9375f2425db7c071f6b80d5e518886bacf844c6",
+        "stages": [
+          {
+            "name": "server-render",
+            "status": "success",
+            "inputHash": "6fe329b4bb0878801fed53f2b8eb3f522f1e6aa7a24ccb6b556939904b4b6674",
+            "outputHash": "bdc2cc2c09068922eb375bf8f9375f2425db7c071f6b80d5e518886bacf844c6",
+            "details": {
+              "callbackExecuted": true
+            }
+          }
+        ],
+        "failure": null,
+        "evidenceHash": "18a14b5647265f9f1690f8ec1367499a4c9de222f064b98cf8982eb50cbe1014"
+      }
+    }
+  ]
+}

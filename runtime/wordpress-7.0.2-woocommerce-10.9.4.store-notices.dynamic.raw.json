@@ -1,0 +1,15 @@
+{
+    "attributes": {
+        "align": "wide"
+    },
+    "callbacks": {
+        "render": true
+    },
+    "isDynamic": true,
+    "kind": "server-render",
+    "markup": "<div data-block-name=\"woocommerce/store-notices\" class=\"wc-block-store-notices woocommerce alignwide wp-block-woocommerce-store-notices\"><div class=\"woocommerce-notices-wrapper\"></div></div>",
+    "markupHash": "bdc2cc2c09068922eb375bf8f9375f2425db7c071f6b80d5e518886bacf844c6",
+    "name": "woocommerce/store-notices",
+    "postId": null,
+    "schemaVersion": 1
+}

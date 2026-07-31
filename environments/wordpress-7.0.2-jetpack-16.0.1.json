@@ -1,0 +1,29 @@
+{
+  "id": "wordpress@7.0.2+jetpack@16.0.1",
+  "title": "WordPress 7.0.2 with Jetpack 16.0.1 (disconnected)",
+  "visibility": "public",
+  "layers": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "priority": 100
+    },
+    {
+      "sourceId": "jetpack@16.0.1",
+      "priority": 200
+    }
+  ],
+  "metadata": {
+    "wordpressVersion": "7.0.2",
+    "jetpackVersion": "16.0.1",
+    "editorSurface": "post-editor",
+    "themeType": "block",
+    "featureFlags": {
+      "connection": "disconnected",
+      "offlineMode": true,
+      "blocksModule": true,
+      "variation": "production"
+    },
+    "locale": "en_US",
+    "profileNote": "Localhost offline mode; no Jetpack site token or connection owner."
+  }
+}

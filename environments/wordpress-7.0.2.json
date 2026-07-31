@@ -1,0 +1,18 @@
+{
+  "id": "wordpress@7.0.2",
+  "title": "WordPress 7.0.2",
+  "visibility": "public",
+  "layers": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "priority": 100
+    }
+  ],
+  "metadata": {
+    "wordpressVersion": "7.0.2",
+    "editorSurface": "post-editor",
+    "themeType": "block",
+    "featureFlags": {},
+    "locale": "en_US"
+  }
+}

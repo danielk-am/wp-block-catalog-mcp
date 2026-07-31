@@ -1,0 +1,31 @@
+{
+  "id": "wordpress@7.0.2+gutenberg@23.6.2",
+  "wordpressVersion": "7.0.2",
+  "phpVersion": "8.3.32",
+  "locale": "en_US",
+  "timezone": "+00:00",
+  "sources": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "productVersion": "7.0.2",
+      "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+    },
+    {
+      "sourceId": "gutenberg@23.6.2",
+      "productVersion": "23.6.2",
+      "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+    }
+  ],
+  "runtimeComponents": [
+    {
+      "name": "server-registry",
+      "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+      "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+    },
+    {
+      "name": "client-registry",
+      "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+      "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+    }
+  ]
+}

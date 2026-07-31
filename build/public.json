@@ -1,0 +1,29 @@
+{
+  "catalogVersion": "2026-07-30-public-seed",
+  "visibility": "public",
+  "output": "../catalog/public.generated.json",
+  "sources": [
+    {
+      "manifest": "../sources/wordpress-7.0.2.json",
+      "checkout": "../.checkouts/wordpress"
+    },
+    {
+      "manifest": "../sources/gutenberg-23.6.2.json",
+      "checkout": "../.checkouts/gutenberg"
+    },
+    {
+      "manifest": "../sources/woocommerce-10.9.4.json",
+      "checkout": "../.checkouts/woocommerce"
+    },
+    {
+      "manifest": "../sources/jetpack-16.0.1.json",
+      "checkout": "../.checkouts/jetpack"
+    }
+  ],
+  "environmentFiles": [
+    "../environments/wordpress-7.0.2.json",
+    "../environments/wordpress-7.0.2-gutenberg-23.6.2.json",
+    "../environments/wordpress-7.0.2-woocommerce-10.9.4.json",
+    "../environments/wordpress-7.0.2-jetpack-16.0.1.json"
+  ]
+}

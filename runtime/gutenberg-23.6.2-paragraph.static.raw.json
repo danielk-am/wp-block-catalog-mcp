@@ -1,0 +1,12 @@
+{
+  "attributes": {
+    "content": "Hello Gutenberg catalogue"
+  },
+  "issues": [],
+  "kind": "static-save",
+  "markup": "<!-- wp:paragraph -->\n<p>Hello Gutenberg catalogue</p>\n<!-- /wp:paragraph -->",
+  "markupHash": "1f7f726450721ed7fb24bc4059e668592d99abddc0e404cc0502fc7b5fd852da",
+  "name": "core/paragraph",
+  "parsedBlockCount": 1,
+  "valid": true
+}

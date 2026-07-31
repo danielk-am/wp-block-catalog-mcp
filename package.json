@@ -1,0 +1,40 @@
+{
+  "name": "@automattic/wp-block-catalog-mcp",
+  "version": "0.1.4",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "wp-block-catalog": "dist/cli.js",
+    "wp-block-catalog-mcp": "dist/mcp/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "catalog:build": "npm run build && npm run catalog:build:public",
+    "catalog:build:public": "node dist/cli.js build build/public.json && node dist/cli.js deliver public catalog/public.generated.json catalog/public.release.generated.json",
+    "catalog:health": "node scripts/check-catalog-health.mjs",
+    "catalog:gate": "npm run catalog:health",
+    "catalog:rebuild-check": "npm run build && node scripts/verify-catalog-build.mjs",
+    "catalog:release": "npm run catalog:rebuild-check && node scripts/gate-release.mjs",
+    "check:sources": "node scripts/check-public-source-drift.mjs",
+    "capture:jetpack": "node scripts/capture-wp-env-profile.mjs",
+    "smoke:mcp": "npm run build && node scripts/smoke-mcp.mjs",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "test:maintenance": "node --test scripts/check-catalog-health.test.mjs scripts/test-check-public-source-drift.mjs scripts/capture-wp-env-profile.test.mjs scripts/create-exact-public-environment.test.mjs scripts/gate-release.test.mjs scripts/verify-catalog-build.test.mjs",
+    "verify": "npm test && npm run test:maintenance && npm run catalog:health && npm run smoke:mcp",
+    "start": "node dist/mcp/server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "fast-glob": "3.3.3",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "@wordpress/env": "11.12.0",
+    "playwright": "1.62.0",
+    "typescript": "7.0.2"
+  }
+}

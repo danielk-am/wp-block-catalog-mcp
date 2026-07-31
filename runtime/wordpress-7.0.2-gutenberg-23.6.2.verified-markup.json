@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "static:core/paragraph:0",
+      "environmentId": "wordpress@7.0.2+gutenberg@23.6.2",
+      "block": {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "Hello Gutenberg catalogue"
+        },
+        "innerBlocks": []
+      },
+      "context": {},
+      "fixtureMarkup": null,
+      "markup": "<!-- wp:paragraph -->\n<p>Hello Gutenberg catalogue</p>\n<!-- /wp:paragraph -->",
+      "evidence": {
+        "schemaVersion": 1,
+        "kind": "static-save",
+        "blockName": "core/paragraph",
+        "status": "passed",
+        "labelsGranted": [
+          "save-runtime-valid"
+        ],
+        "expectedEnvironment": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "expectedEnvironmentHash": "090a7018047afc07a4353d9ed9f1f5bc6613cff8f8640892e412f374f2b18fc2",
+        "observedEnvironmentBefore": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "observedEnvironmentAfter": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "inputHash": "a9c1624fd933257c544bfdce9402918a8f10107900892c1e4d5747443eedb79f",
+        "outputHash": "1f7f726450721ed7fb24bc4059e668592d99abddc0e404cc0502fc7b5fd852da",
+        "stages": [
+          {
+            "name": "save",
+            "status": "success",
+            "inputHash": "a9c1624fd933257c544bfdce9402918a8f10107900892c1e4d5747443eedb79f",
+            "outputHash": "1f7f726450721ed7fb24bc4059e668592d99abddc0e404cc0502fc7b5fd852da",
+            "details": {}
+          },
+          {
+            "name": "parse",
+            "status": "success",
+            "inputHash": "1f7f726450721ed7fb24bc4059e668592d99abddc0e404cc0502fc7b5fd852da",
+            "outputHash": "0d2442d164be8b9bdf5ed4a7798dd778f651cdcdab8a82fa2e0dd8e0515bcfca",
+            "details": {
+              "parsedBlockCount": 1
+            }
+          },
+          {
+            "name": "validate",
+            "status": "success",
+            "inputHash": "0d2442d164be8b9bdf5ed4a7798dd778f651cdcdab8a82fa2e0dd8e0515bcfca",
+            "outputHash": "61f055cb3c85c0260c084cf8c4e1bf213c6d35e94775da274c8c31284349d8ae",
+            "details": {}
+          }
+        ],
+        "failure": null,
+        "evidenceHash": "c88c7c20e52b3cc8726bf1c4b2a0949beb80ec5ec1ea6bf11a97ef14f43036ee"
+      }
+    },
+    {
+      "id": "deprecated:core/image:0",
+      "environmentId": "wordpress@7.0.2+gutenberg@23.6.2",
+      "block": {
+        "name": "core/image",
+        "attributes": {
+          "align": "left",
+          "alt": "",
+          "caption": [],
+          "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+        },
+        "innerBlocks": []
+      },
+      "context": {},
+      "fixtureMarkup": "<!-- wp:core/image {\"align\":\"left\"} -->\n<figure class=\"wp-block-image alignleft\" style=\"max-width:50%\">\n\t<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==\" alt=\"\" />\n</figure>\n<!-- /wp:core/image -->",
+      "markup": "<!-- wp:image {\"align\":\"left\"} -->\n<figure class=\"wp-block-image alignleft\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg==\" alt=\"\"/></figure>\n<!-- /wp:image -->",
+      "evidence": {
+        "schemaVersion": 1,
+        "kind": "deprecated-fixture",
+        "blockName": "core/image",
+        "status": "passed",
+        "labelsGranted": [
+          "deprecated-fixture-valid"
+        ],
+        "expectedEnvironment": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "expectedEnvironmentHash": "090a7018047afc07a4353d9ed9f1f5bc6613cff8f8640892e412f374f2b18fc2",
+        "observedEnvironmentBefore": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "observedEnvironmentAfter": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "inputHash": "6c3b23e3dabc244a5fe7ea4314a6e2e4bdf5c5ef528af24d44f09ddea8d77935",
+        "outputHash": "6fa4e8e7d89ac7bed5aac02cf4d1ea8402eb1fdf724d82363ac29e0158b71de9",
+        "stages": [
+          {
+            "name": "migrate",
+            "status": "success",
+            "inputHash": "6c3b23e3dabc244a5fe7ea4314a6e2e4bdf5c5ef528af24d44f09ddea8d77935",
+            "outputHash": "bef9bffc7017d05951275bbaf86cedcc035a73b1126a7826785f5a484165dc37",
+            "details": {
+              "migrated": true
+            }
+          },
+          {
+            "name": "save",
+            "status": "success",
+            "inputHash": "bef9bffc7017d05951275bbaf86cedcc035a73b1126a7826785f5a484165dc37",
+            "outputHash": "6fa4e8e7d89ac7bed5aac02cf4d1ea8402eb1fdf724d82363ac29e0158b71de9",
+            "details": {}
+          },
+          {
+            "name": "parse",
+            "status": "success",
+            "inputHash": "6fa4e8e7d89ac7bed5aac02cf4d1ea8402eb1fdf724d82363ac29e0158b71de9",
+            "outputHash": "0d2442d164be8b9bdf5ed4a7798dd778f651cdcdab8a82fa2e0dd8e0515bcfca",
+            "details": {}
+          },
+          {
+            "name": "validate",
+            "status": "success",
+            "inputHash": "0d2442d164be8b9bdf5ed4a7798dd778f651cdcdab8a82fa2e0dd8e0515bcfca",
+            "outputHash": "61f055cb3c85c0260c084cf8c4e1bf213c6d35e94775da274c8c31284349d8ae",
+            "details": {}
+          }
+        ],
+        "failure": null,
+        "evidenceHash": "2610a328bef66ac7d18c07eb529f1d586b6afeb3ba3edbec52fc690b76710d30"
+      }
+    },
+    {
+      "id": "dynamic:core/latest-posts:0",
+      "environmentId": "wordpress@7.0.2+gutenberg@23.6.2",
+      "block": {
+        "name": "core/latest-posts",
+        "attributes": {
+          "postsToShow": 2
+        },
+        "innerBlocks": []
+      },
+      "context": {},
+      "fixtureMarkup": null,
+      "markup": "<ul class=\"wp-block-latest-posts__list wp-block-latest-posts is-layout-flow wp-block-latest-posts-is-layout-flow\"><li><a class=\"wp-block-latest-posts__post-title\" href=\"http://localhost:8897/2026/07/30/hello-world/\">Hello world!</a></li>\n</ul>",
+      "evidence": {
+        "schemaVersion": 1,
+        "kind": "dynamic-server-render",
+        "blockName": "core/latest-posts",
+        "status": "passed",
+        "labelsGranted": [
+          "server-render-valid"
+        ],
+        "expectedEnvironment": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "expectedEnvironmentHash": "090a7018047afc07a4353d9ed9f1f5bc6613cff8f8640892e412f374f2b18fc2",
+        "observedEnvironmentBefore": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "observedEnvironmentAfter": {
+          "id": "wordpress@7.0.2+gutenberg@23.6.2",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "gutenberg@23.6.2",
+              "productVersion": "23.6.2",
+              "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-php-8.3.32",
+              "artifactHash": "9a1a2a82acf9a9f384cbf2a40515640797672ce863740819898623791949bbd5"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-gutenberg-23.6.2-post-editor",
+              "artifactHash": "d5a8e993104c64d1202513685afa6e644b98f6ab442ab1e2d291f2d30d6dd53f"
+            }
+          ]
+        },
+        "inputHash": "e65c61c960c5065ded7b7f8e1acc3aca3f74d817831975e4f6eeb9eaee918ca5",
+        "outputHash": "3ad5f66673e8127ec7ba4b41aadb140f1ef4d7aa10f86c6b01e20adcd9989ace",
+        "stages": [
+          {
+            "name": "server-render",
+            "status": "success",
+            "inputHash": "e65c61c960c5065ded7b7f8e1acc3aca3f74d817831975e4f6eeb9eaee918ca5",
+            "outputHash": "3ad5f66673e8127ec7ba4b41aadb140f1ef4d7aa10f86c6b01e20adcd9989ace",
+            "details": {
+              "callbackExecuted": true
+            }
+          }
+        ],
+        "failure": null,
+        "evidenceHash": "b0c894c61ebd6f461890b0eb1725f3ad97b4ceb91e4cdd7f72e19258a7c84b9e"
+      }
+    }
+  ]
+}

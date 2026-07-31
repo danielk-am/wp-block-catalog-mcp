@@ -1,0 +1,30 @@
+{
+  "id": "wordpress@7.0.2",
+  "adapter": "wordpress-core",
+  "product": "wordpress",
+  "productVersion": "7.0.2",
+  "channel": "stable",
+  "visibility": "public",
+  "repository": "https://github.com/WordPress/wordpress-develop",
+  "ref": "7.0.2",
+  "commit": "855551c4477bd5a0407221c57dae123c4163b434",
+  "include": [
+    "src/wp-includes/blocks/*/block.json"
+  ],
+  "exclude": [],
+  "metadata": {
+    "coreGutenbergCommit": "a685aba7d3b3e898e87e97d6e8bf6b4cc53e4ceb",
+    "registration": [
+      "src/wp-includes/blocks/index.php",
+      "src/wp-includes/blocks/require-static-blocks.php",
+      "src/wp-includes/blocks/require-dynamic-blocks.php"
+    ],
+    "phpRoot": "src/wp-includes/blocks",
+    "canonicalBlockCount": 109,
+    "runtimeProfiles": [
+      "post-editor",
+      "site-editor",
+      "widgets-editor"
+    ]
+  }
+}

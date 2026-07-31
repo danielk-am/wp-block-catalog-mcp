@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "id": "static:core/paragraph:0",
+      "environmentId": "wordpress@7.0.2+jetpack@16.0.1",
+      "block": {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "Jetpack disconnected runtime"
+        },
+        "innerBlocks": []
+      },
+      "context": {},
+      "fixtureMarkup": null,
+      "markup": "<!-- wp:paragraph -->\n<p>Jetpack disconnected runtime</p>\n<!-- /wp:paragraph -->",
+      "evidence": {
+        "schemaVersion": 1,
+        "kind": "static-save",
+        "blockName": "core/paragraph",
+        "status": "passed",
+        "labelsGranted": [
+          "save-runtime-valid"
+        ],
+        "expectedEnvironment": {
+          "id": "wordpress@7.0.2+jetpack@16.0.1",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "jetpack@16.0.1",
+              "productVersion": "16.0.1",
+              "commit": "4c79b22036b83e8c03a4354ad67f54a5241319b0"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-php-8.3.32",
+              "artifactHash": "9dbb7e4e4a3a9ef12c44bec25a1e86d289eac17b7eddc2561841d2d9bcef7fd4"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-post-editor",
+              "artifactHash": "969821d03a3bb221c93ea2a10f3b19a5435751cd29ca6e622d2e9687873bf2a3"
+            }
+          ]
+        },
+        "expectedEnvironmentHash": "011ea54a104e0374cdedb82037df2f0bd3b25de44fea0a656575d63f1d9f5317",
+        "observedEnvironmentBefore": {
+          "id": "wordpress@7.0.2+jetpack@16.0.1",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "jetpack@16.0.1",
+              "productVersion": "16.0.1",
+              "commit": "4c79b22036b83e8c03a4354ad67f54a5241319b0"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-php-8.3.32",
+              "artifactHash": "9dbb7e4e4a3a9ef12c44bec25a1e86d289eac17b7eddc2561841d2d9bcef7fd4"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-post-editor",
+              "artifactHash": "969821d03a3bb221c93ea2a10f3b19a5435751cd29ca6e622d2e9687873bf2a3"
+            }
+          ]
+        },
+        "observedEnvironmentAfter": {
+          "id": "wordpress@7.0.2+jetpack@16.0.1",
+          "wordpressVersion": "7.0.2",
+          "phpVersion": "8.3.32",
+          "locale": "en_US",
+          "timezone": "+00:00",
+          "sources": [
+            {
+              "sourceId": "wordpress@7.0.2",
+              "productVersion": "7.0.2",
+              "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+            },
+            {
+              "sourceId": "jetpack@16.0.1",
+              "productVersion": "16.0.1",
+              "commit": "4c79b22036b83e8c03a4354ad67f54a5241319b0"
+            }
+          ],
+          "runtimeComponents": [
+            {
+              "name": "server-registry",
+              "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-php-8.3.32",
+              "artifactHash": "9dbb7e4e4a3a9ef12c44bec25a1e86d289eac17b7eddc2561841d2d9bcef7fd4"
+            },
+            {
+              "name": "client-registry",
+              "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-post-editor",
+              "artifactHash": "969821d03a3bb221c93ea2a10f3b19a5435751cd29ca6e622d2e9687873bf2a3"
+            }
+          ]
+        },
+        "inputHash": "b0198c027aa32c301659df5050e447f537074f4c2153e5225cc6c1d5657acf8f",
+        "outputHash": "e297f33b91e37c988224cff83f19f2552260837adaf187ccc7e9c86cf6a02711",
+        "stages": [
+          {
+            "name": "save",
+            "status": "success",
+            "inputHash": "b0198c027aa32c301659df5050e447f537074f4c2153e5225cc6c1d5657acf8f",
+            "outputHash": "e297f33b91e37c988224cff83f19f2552260837adaf187ccc7e9c86cf6a02711",
+            "details": {}
+          },
+          {
+            "name": "parse",
+            "status": "success",
+            "inputHash": "e297f33b91e37c988224cff83f19f2552260837adaf187ccc7e9c86cf6a02711",
+            "outputHash": "0d2442d164be8b9bdf5ed4a7798dd778f651cdcdab8a82fa2e0dd8e0515bcfca",
+            "details": {
+              "parsedBlockCount": 1
+            }
+          },
+          {
+            "name": "validate",
+            "status": "success",
+            "inputHash": "0d2442d164be8b9bdf5ed4a7798dd778f651cdcdab8a82fa2e0dd8e0515bcfca",
+            "outputHash": "61f055cb3c85c0260c084cf8c4e1bf213c6d35e94775da274c8c31284349d8ae",
+            "details": {}
+          }
+        ],
+        "failure": null,
+        "evidenceHash": "582ed5b64101266e731aa453241e2236b6c41ad384bd3cc2197e8a9afa961d5d"
+      }
+    }
+  ]
+}

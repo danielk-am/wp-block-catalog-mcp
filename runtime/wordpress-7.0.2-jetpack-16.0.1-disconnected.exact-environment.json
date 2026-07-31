@@ -1,0 +1,31 @@
+{
+  "id": "wordpress@7.0.2+jetpack@16.0.1",
+  "wordpressVersion": "7.0.2",
+  "phpVersion": "8.3.32",
+  "locale": "en_US",
+  "timezone": "+00:00",
+  "sources": [
+    {
+      "sourceId": "wordpress@7.0.2",
+      "productVersion": "7.0.2",
+      "commit": "855551c4477bd5a0407221c57dae123c4163b434"
+    },
+    {
+      "sourceId": "jetpack@16.0.1",
+      "productVersion": "16.0.1",
+      "commit": "4c79b22036b83e8c03a4354ad67f54a5241319b0"
+    }
+  ],
+  "runtimeComponents": [
+    {
+      "name": "server-registry",
+      "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-php-8.3.32",
+      "artifactHash": "9dbb7e4e4a3a9ef12c44bec25a1e86d289eac17b7eddc2561841d2d9bcef7fd4"
+    },
+    {
+      "name": "client-registry",
+      "version": "wordpress-7.0.2-jetpack-16.0.1-disconnected-post-editor",
+      "artifactHash": "969821d03a3bb221c93ea2a10f3b19a5435751cd29ca6e622d2e9687873bf2a3"
+    }
+  ]
+}

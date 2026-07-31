@@ -1,0 +1,43 @@
+{
+  "id": "gutenberg@23.6.2",
+  "adapter": "gutenberg-plugin",
+  "product": "gutenberg",
+  "productVersion": "23.6.2",
+  "channel": "stable",
+  "visibility": "public",
+  "repository": "https://github.com/WordPress/gutenberg",
+  "ref": "v23.6.2",
+  "commit": "675c2a37a5b49f183fa80d7d03e4bd5779646808",
+  "include": [
+    "packages/block-library/src/*/block.json",
+    "packages/widgets/src/blocks/*/block.json",
+    "packages/edit-widgets/src/blocks/*/block.json"
+  ],
+  "exclude": [
+    "packages/e2e-tests/plugins/**",
+    "packages/scripts/scripts/**",
+    "phpunit/fixtures/**",
+    "schemas/json/block.json"
+  ],
+  "metadata": {
+    "buildManifests": [
+      "build/scripts/block-library/blocks-manifest.php",
+      "build/scripts/widgets/blocks/blocks-manifest.php",
+      "build/scripts/edit-widgets/blocks/blocks-manifest.php"
+    ],
+    "canonicalBlockCount": 123,
+    "overlayRule": "Gutenberg unregisters matching core block types and assets before registering its build output.",
+    "runtimeProfiles": [
+      "post-editor",
+      "site-editor",
+      "widgets-editor",
+      "post-editor-with-form-experiment"
+    ],
+    "knownGates": [
+      "__experimental",
+      "fse",
+      "window.__experimentalEnableFormBlocks",
+      "editor-surface"
+    ]
+  }
+}
