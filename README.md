@@ -53,7 +53,7 @@ For an MCP client, use absolute paths:
 ```json
 {
   "mcpServers": {
-    "wordpress-block-catalogue": {
+    "wp-block-catalog": {
       "command": "node",
       "args": ["/absolute/path/wp-block-catalog-mcp/dist/mcp/server.js"],
       "env": {
@@ -71,6 +71,18 @@ For an MCP client, use absolute paths:
 `;` on Windows. Singular `*_PATH` and plural `*_PATHS` settings can be
 combined. Duplicate environment bundles or verification record identities
 stop the server at startup.
+
+### AI client setup
+
+Use the public catalogue definition above under the same `wp-block-catalog` name in each client:
+
+- Claude Code stores user-scoped servers in its user configuration. Check the result with `claude mcp get wp-block-catalog`.
+- Claude Desktop stores the definition under `mcpServers` in `claude_desktop_config.json`.
+- Codex stores the definition in `~/.codex/config.toml`. Codex CLI, the desktop app, and the IDE extension share this configuration. Check it with `codex mcp get wp-block-catalog`.
+- VS Code and VSCodium store the same server object under `servers` in the user `mcp.json`. Their `--add-mcp` command accepts the definition as JSON.
+- Gemini CLI stores the definition under `mcpServers` in `~/.gemini/settings.json`. Check it with `gemini mcp list` from a trusted folder.
+
+Restart desktop and IDE clients after changing their user configuration. The public repository does not contain the separate WordPress.com private catalogue.
 
 ## Supported environments
 
