@@ -1,4 +1,4 @@
-# WordPress Block Catalogue MCP
+# WP Block Catalog MCP
 
 Give agents and developer tools verified WordPress block definitions and
 markup for the exact public product environment they target.
@@ -31,8 +31,8 @@ working tree.
 ## Quick start
 
 ```bash
-git clone https://github.com/danielk-am/wp-block-catalog.git
-cd wp-block-catalog
+git clone https://github.com/danielk-am/wp-block-catalog-mcp.git
+cd wp-block-catalog-mcp
 npm ci
 npm run verify
 ```
@@ -55,12 +55,12 @@ For an MCP client, use absolute paths:
   "mcpServers": {
     "wordpress-block-catalogue": {
       "command": "node",
-      "args": ["/absolute/path/wp-block-catalog/dist/mcp/server.js"],
+      "args": ["/absolute/path/wp-block-catalog-mcp/dist/mcp/server.js"],
       "env": {
-        "WP_BLOCK_CATALOG_PATH": "/absolute/path/wp-block-catalog/catalog/public.release.generated.json",
+        "WP_BLOCK_CATALOG_PATH": "/absolute/path/wp-block-catalog-mcp/catalog/public.release.generated.json",
         "WP_BLOCK_DEFAULT_ENVIRONMENT": "wordpress@7.0.2",
-        "WP_BLOCK_RUNTIME_PATHS": "/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-post-editor.reconciled.json:/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-gutenberg-23.6.2-post-editor.reconciled.json:/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-woocommerce-10.9.4-post-editor.reconciled.json:/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-jetpack-16.0.1-disconnected-post-editor.reconciled.json",
-        "WP_BLOCK_VERIFICATION_PATHS": "/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2.verified-markup.json:/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-gutenberg-23.6.2.verified-markup.json:/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-woocommerce-10.9.4.verified-markup.json:/absolute/path/wp-block-catalog/runtime/wordpress-7.0.2-jetpack-16.0.1-disconnected.verified-markup.json"
+        "WP_BLOCK_RUNTIME_PATHS": "/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-post-editor.reconciled.json:/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-gutenberg-23.6.2-post-editor.reconciled.json:/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-woocommerce-10.9.4-post-editor.reconciled.json:/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-jetpack-16.0.1-disconnected-post-editor.reconciled.json",
+        "WP_BLOCK_VERIFICATION_PATHS": "/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2.verified-markup.json:/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-gutenberg-23.6.2.verified-markup.json:/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-woocommerce-10.9.4.verified-markup.json:/absolute/path/wp-block-catalog-mcp/runtime/wordpress-7.0.2-jetpack-16.0.1-disconnected.verified-markup.json"
       }
     }
   }

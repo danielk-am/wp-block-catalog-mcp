@@ -1,4 +1,4 @@
-# wp-block-catalog
+# wp-block-catalog-mcp
 
 This repository builds and serves a version-aware catalogue of WordPress block definitions.
 
