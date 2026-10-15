@@ -22,6 +22,8 @@ or change your WordPress site.
 - **Investigate registration differences.** See where source metadata, the PHP
   registry, and the editor registry disagree.
 
+<a id="quick-start"></a>
+
 ## Get started
 
 Requires **Node.js 20 or newer** and **npm**. The package is not published to npm.
