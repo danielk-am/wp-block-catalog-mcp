@@ -1,5 +1,5 @@
 {
-  "catalogVersion": "2026-07-30-public-seed",
+  "catalogVersion": "2026-10-15-alkamy-pinned",
   "visibility": "public",
   "output": "../catalog/public.generated.json",
   "sources": [

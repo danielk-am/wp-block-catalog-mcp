@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto';
 import { readFile, realpath } from 'node:fs/promises';
 import { promisify } from 'node:util';
 
-import fg from 'fast-glob';
+import { glob } from 'tinyglobby';
 
 import { normalizeBlockMetadata } from './normalize.js';
 import type { BlockDefinition, SourceManifest } from './schema.js';
@@ -31,10 +31,10 @@ export async function scanSource(
   }
 
   const checkoutRoot = await realpath(checkout);
-  const paths = await fg(source.include, {
+  const paths = await glob(source.include, {
     cwd: checkoutRoot,
     onlyFiles: true,
-    unique: true,
+    expandDirectories: false,
     followSymbolicLinks: false,
     ignore: source.exclude,
   });

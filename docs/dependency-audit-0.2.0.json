@@ -1,0 +1,227 @@
+{
+  "checkedOn": "2026-10-15",
+  "production": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "full": {
+    "info": 0,
+    "low": 0,
+    "moderate": 6,
+    "high": 1,
+    "critical": 2,
+    "total": 9
+  },
+  "findings": {
+    "@simple-git/argv-parser": {
+      "severity": "critical",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/@simple-git/argv-parser"
+      ],
+      "via": [
+        {
+          "source": 1241198,
+          "name": "@simple-git/argv-parser",
+          "dependency": "@simple-git/argv-parser",
+          "title": "simple-git: `VISUAL` editor environment variable is omitted from unsafe editor detection",
+          "url": "https://github.com/advisories/GHSA-v5rq-49vh-5v5c",
+          "severity": "critical",
+          "cwe": [
+            "CWE-78",
+            "CWE-184"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<2.0.1"
+        }
+      ]
+    },
+    "@wordpress/env": {
+      "severity": "high",
+      "isDirect": true,
+      "nodes": [
+        "node_modules/@wordpress/env"
+      ],
+      "via": [
+        "@wp-playground/cli",
+        "js-yaml",
+        "simple-git"
+      ]
+    },
+    "@wp-playground/cli": {
+      "severity": "moderate",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/@wp-playground/cli"
+      ],
+      "via": [
+        "express"
+      ]
+    },
+    "argparse": {
+      "severity": "moderate",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/argparse"
+      ],
+      "via": [
+        "sprintf-js"
+      ]
+    },
+    "express": {
+      "severity": "moderate",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/@wp-playground/cli/node_modules/express"
+      ],
+      "via": [
+        "qs"
+      ]
+    },
+    "js-yaml": {
+      "severity": "moderate",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/js-yaml"
+      ],
+      "via": [
+        "argparse"
+      ]
+    },
+    "qs": {
+      "severity": "moderate",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/@wp-playground/cli/node_modules/express/node_modules/qs"
+      ],
+      "via": [
+        {
+          "source": 1158506,
+          "name": "qs",
+          "dependency": "qs",
+          "title": "qs array-limit bypass via bracket-key comma parsing",
+          "url": "https://github.com/advisories/GHSA-x5fp-wj9c-mxmx",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=6.14.2 <=6.15.3"
+        },
+        {
+          "source": 1158507,
+          "name": "qs",
+          "dependency": "qs",
+          "title": "qs: Denial of Service via Attacker Controlled isBuffer",
+          "url": "https://github.com/advisories/GHSA-4mjr-xmp4-gh2g",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-248",
+            "CWE-703"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=2.2.5 <6.16.0"
+        }
+      ]
+    },
+    "simple-git": {
+      "severity": "critical",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/simple-git"
+      ],
+      "via": [
+        "@simple-git/argv-parser",
+        {
+          "source": 1241199,
+          "name": "simple-git",
+          "dependency": "simple-git",
+          "title": "simple-git unsafe-operation guard does not block trailer command configuration",
+          "url": "https://github.com/advisories/GHSA-x6jw-m9v5-85vh",
+          "severity": "critical",
+          "cwe": [
+            "CWE-78",
+            "CWE-184"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=3.15.0 <4.0.1"
+        },
+        {
+          "source": 1241200,
+          "name": "simple-git",
+          "dependency": "simple-git",
+          "title": "simple-git allows command execution through unblocked Git configuration includes",
+          "url": "https://github.com/advisories/GHSA-g4wm-2vf7-vfgr",
+          "severity": "high",
+          "cwe": [
+            "CWE-77",
+            "CWE-78"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<=3.36.0"
+        },
+        {
+          "source": 1242216,
+          "name": "simple-git",
+          "dependency": "simple-git",
+          "title": "simple-git: unsafe-operations plugin bypass via git long-option abbreviation (--receive-p/--exe) -> command execution (residual of CVE-2026-28291)",
+          "url": "https://github.com/advisories/GHSA-858h-whjf-mvg5",
+          "severity": "high",
+          "cwe": [
+            "CWE-77",
+            "CWE-88"
+          ],
+          "cvss": {
+            "score": 8.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+          },
+          "range": "<=3.36.0"
+        }
+      ]
+    },
+    "sprintf-js": {
+      "severity": "moderate",
+      "isDirect": false,
+      "nodes": [
+        "node_modules/sprintf-js"
+      ],
+      "via": [
+        {
+          "source": 1241202,
+          "name": "sprintf-js",
+          "dependency": "sprintf-js",
+          "title": "sprintf-js vulnerable to denial of service through unbounded precision specifiers",
+          "url": "https://github.com/advisories/GHSA-hp3w-g68c-fv3c",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1284"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<=1.1.3"
+        }
+      ]
+    }
+  }
+}

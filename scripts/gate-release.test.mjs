@@ -11,10 +11,17 @@ import test from 'node:test';
 
 import { gateRelease } from './gate-release.mjs';
 
+const releaseArtifact = JSON.parse(await readFile(
+  resolve('catalog/public.release.generated.json'),
+  'utf8',
+));
+const captureTime = new Date(releaseArtifact.generatedAt);
+
 test('release gate accepts an explicit unchanged public baseline',
   async () => {
     const result = await gateRelease(
       resolve('catalog/public.release.generated.json'),
+      { now: captureTime },
     );
 
     assert.equal(result.passed, true);
@@ -85,6 +92,7 @@ test('release gate checks a distinct candidate without printing inventory',
       const options = {
         publicPolicyPath: unexplainedPolicyPath,
         publicNextPath: candidatePath,
+        now: captureTime,
       };
       const failed = await gateRelease(
         publicPath,
@@ -114,3 +122,12 @@ test('release gate checks a distinct candidate without printing inventory',
       await rm(temporary, { recursive: true, force: true });
     }
   });
+
+test('release gate rejects a snapshot after the freshness window', async () => {
+  const result = await gateRelease(
+    resolve('catalog/public.release.generated.json'),
+    { now: new Date(captureTime.getTime() + 8 * 24 * 60 * 60 * 1000) },
+  );
+  assert.equal(result.passed, false);
+  assert.equal(result.public.freshness, 'stale');
+});

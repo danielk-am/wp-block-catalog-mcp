@@ -23,6 +23,7 @@ async function evaluateOne({
   policyPath,
   previousPath,
   nextPath,
+  now,
 }) {
   const policy = ReleaseGatePolicySchema.parse(
     await readJson(policyPath),
@@ -34,6 +35,7 @@ async function evaluateOne({
     await readJson(previousPath),
     await readJson(nextPath),
     policy,
+    now,
   );
   return {
     passed: result.passed,
@@ -54,6 +56,7 @@ export async function gateRelease(
       repositoryRoot,
       'catalog/public.release.generated.json',
     ),
+    now,
   } = {},
 ) {
   const publicResult = await evaluateOne({
@@ -61,6 +64,7 @@ export async function gateRelease(
     policyPath: publicPolicyPath,
     previousPath: previousPublicPath,
     nextPath: publicNextPath,
+    now,
   });
   return {
     passed: publicResult.passed,

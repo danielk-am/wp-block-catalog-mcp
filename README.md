@@ -1,4 +1,6 @@
-# WP Block Catalog MCP
+# WP Block Catalog MCP by Alkamy
+
+![Alkamy](assets/alkamy-logo.svg)
 
 Give agents and developer tools verified WordPress block definitions and
 markup for the exact public product environment they target.
@@ -27,6 +29,18 @@ observations so clients do not have to guess from source files.
 
 The package is not published to npm. Clone the repository and run it from the
 working tree.
+
+## Companion skill
+
+The [companion skill](skills/using-wp-block-catalog-mcp) guides an agent through
+environment selection, block inspection, comparisons and stored markup evidence.
+Configure the server below, then install the skill folder through your client's
+supported skills mechanism. Release assets include a standalone skill ZIP.
+
+Release 0.2.0 was exercised in Codex CLI against the running local MCP server.
+Claude Code, Cursor, Copilot and Agensi delivery have not been tested for this
+release. Setup examples identify configuration locations, not tested-client
+certification. See the [recorded demonstration](docs/demo.md).
 
 ## Quick start
 
@@ -85,6 +99,12 @@ Use the public catalogue definition above under the same `wp-block-catalog` name
 Restart desktop and IDE clients after changing their user configuration. The public repository does not contain the separate WordPress.com private catalogue.
 
 ## Supported environments
+
+These are pinned historical environments, not the latest product releases. The
+catalogue was rebuilt from their exact source commits on 15 October 2026; that
+build date does not refresh runtime evidence. Jetpack registry captures are dated
+30 July 2026. The other three registry bundles omit capture timestamps, and the
+markup records omit capture timestamps. Those dates remain unknown.
 
 | Environment | Server registry | Client registry | Verified evidence |
 | --- | ---: | ---: | --- |
@@ -225,10 +245,20 @@ or verification labels.
 
 ## Status
 
-Version 0.1.4 is the initial public-only repository snapshot. It includes four
-public environments and a committed deterministic release artefact.
+Version 0.2.0 is the Alkamy MIT release. It includes the companion skill, four
+pinned public environments and a deterministic catalogue rebuilt from exact
+source checkouts. Original runtime evidence is retained unchanged. Newer upstream
+product versions were detected on 15 October 2026 and are outside this release's
+verified environment coverage.
+
+The production dependency audit is clean. Development tools used to acquire
+runtime captures still have dependency advisories; see the [release readiness
+record](docs/release-readiness-0.2.0.md) for the checked scope and limitations.
 
 ## License
 
-No open-source license has been granted yet. Public visibility does not grant
-permission to copy, modify, or redistribute the code.
+Alkamy's code and documentation are open source under the [MIT License](LICENSE).
+Copyright (c) 2026 Alkamy.
+
+Upstream-derived block metadata, runtime output, and dependencies retain their
+applicable upstream terms. See [third-party notices](THIRD_PARTY_NOTICES.md).
