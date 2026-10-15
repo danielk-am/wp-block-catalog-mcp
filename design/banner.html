@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WP Block Catalog MCP by Alkamy</title>
+<!-- Editable banner source based on Alkamy's approved banner-template.html.
+Render at 1544x500 and at 772x250 with ?scale=0.5.
+The preview reproduces stored output from docs/demo.md, not an application UI. -->
+<style>
+	/* Alkamy Holdings brand, from the canonical logo asset README. */
+	:root {
+		--surface: #FFFFFF;
+		--backdrop: #FAF8F3;
+		--ink: #16161A;
+		--muted: #5E5A52;
+		--brand: #9A6F1E;
+		--border: #E5DED2;
+		--font: system-ui, sans-serif;
+	}
+
+	* { box-sizing: border-box; }
+
+	html, body { margin: 0; }
+
+	body {
+		position: relative;
+		width: 1544px;
+		height: 500px;
+		overflow: hidden;
+		background: var(--backdrop);
+		color: var(--ink);
+		font-family: var(--font);
+	}
+
+	.copy {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 96px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 760px;
+	}
+
+	.copy img {
+		width: 260px;
+		height: auto;
+		margin-bottom: 32px;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 72px;
+		font-weight: 700;
+		letter-spacing: -0.03em;
+		line-height: 1.05;
+	}
+
+	.copy__for {
+		margin: 14px 0 0;
+		color: var(--brand);
+		font-size: 34px;
+		font-weight: 600;
+		letter-spacing: -0.01em;
+	}
+
+	.copy__line {
+		max-width: 660px;
+		margin: 28px 0 0;
+		color: var(--muted);
+		font-size: 28px;
+		line-height: 1.3;
+	}
+
+	/* Typeset excerpt of the recorded MCP response. */
+	.mock {
+		position: absolute;
+		top: 48px;
+		left: 908px;
+		width: 548px;
+		padding: 28px 36px 30px;
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		background: var(--surface);
+		box-shadow: 0 24px 60px rgba(22, 22, 26, 0.10);
+	}
+
+	.mock__title {
+		margin: 0 -36px 20px;
+		padding: 0 36px 20px;
+		border-bottom: 1px solid var(--border);
+		font-size: 30px;
+		font-weight: 700;
+	}
+
+    .mock__title { margin-bottom: 18px; }
+    .environment { color: var(--muted); font-size: 23px; }
+    .caption { margin-top: 26px; font-size: 23px; font-weight: 600; }
+    pre { margin: 14px 0 24px; font: 21px/1.65 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.02em; }
+    .evidence { color: var(--brand); font: 600 23px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .note { margin-top: 6px; color: var(--muted); font-size: 21px; }
+</style>
+</head>
+<body>
+	<div class="copy">
+		<img src="../assets/alkamy-logo.svg" alt="">
+		<h1>WP Block<br>Catalog MCP</h1>
+		<p class="copy__for">for WordPress</p>
+		<p class="copy__line">Look up blocks and recorded markup<br>by WordPress version.</p>
+	</div>
+
+	<div class="mock" aria-label="Recorded MCP output">
+        <div class="mock__title">core/paragraph</div>
+        <div class="environment">wordpress@7.0.2</div>
+        <div class="caption">Recorded markup</div>
+        <pre>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Hello catalogue&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;</pre>
+        <div class="evidence">save-runtime-valid</div>
+        <div class="note">Exact-input evidence lookup</div>
+    </div>
+
+	<script>
+		// ?scale=0.5 renders the 772x250 banner from the same layout.
+		const scale = new URLSearchParams( location.search ).get( 'scale' );
+		if ( scale ) {
+			document.documentElement.style.zoom = scale;
+		}
+	</script>
+</body>
+</html>
